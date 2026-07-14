@@ -12,19 +12,13 @@ Scripts rely on the ThorCam software package, which can be found [here](https://
 Once you have downloaded the software, it will contain the Python SDK in a zip folder found within `/Scientific_Camera_Interfaces/SDK/Python_Toolkit`. To install it, use a package manager such as pip as following:
 
 ```
-python.exe -m pip install thorlabs_tsi_camera_python_sdk_package.zip
+python -m pip install thorlabs_tsi_camera_python_sdk_package.zip
 ```
 
 This will install the `thorlabs_tsi_sdk` package into your current environment. 
 
-Additional examples and requirements can be installed as:
+Finally, you will need to export the path to the shared libraries that the scripts need to run with:
 
 ```
-pip install -r /Scientific_Camera_Interfaces/SDK/Python_Toolkit/examples/Requirements.txt  
-```
-
-Finally, in the directory where you run your scripts, you will need to export the path to the shared libraries that the scripts need to run with:
-
-```
-`export LD_LIBRARY_PATH="/Scientific_Camera_Interfaces/SDK/Native_To_Toolkit/bin/Native_64_lib:$LD_LIBRARY_PATH"`
+export LD_LIBRARY_PATH="/Scientific_Camera_Interfaces/SDK/Native_Toolkit/bin/Native_64_lib:$LD_LIBRARY_PATH"
 ```
