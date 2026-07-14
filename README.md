@@ -33,7 +33,7 @@ To run the scripts you will need the `opencv` package. To install it run:
 pip install opencv-python
 ```
 
-## Troubleshooting
+## Troubleshooting
 
 A common error you will encounter when trying to run the scripts is `Segmantation fault (core dumped)`.
 
